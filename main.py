@@ -1,5 +1,5 @@
 """
-OCR 評分表辨識系統 - 主程式
+OCR 評分表辨識工具 - 主程式
 整合所有模組，提供命令列介面
 """
 import argparse
@@ -12,7 +12,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / 'src'))
 
 from pdf_processor import get_pdf_list
-from ocr_extractor import OCRExtractor
 from data_aggregator import DataAggregator
 from csv_writer import write_csv
 from privacy_ocr_extractor import PrivacyOCRExtractor
@@ -31,7 +30,7 @@ def setup_logging(verbose: bool = False):
 def main():
     """主程式"""
     parser = argparse.ArgumentParser(
-        description='OCR 評分表辨識系統 - 自動辨識手寫評分並輸出 CSV',
+        description='OCR 評分表辨識工具 - 自動辨識手寫評分並輸出 CSV',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 範例用法:
@@ -115,7 +114,7 @@ def main():
     logger = logging.getLogger(__name__)
     
     logger.info("="*60)
-    logger.info("OCR 評分表辨識系統")
+    logger.info("OCR 評分表辨識工具")
     logger.info("="*60)
     
     # 取得 API Key
@@ -167,6 +166,7 @@ def main():
         else:
             # 完整模式：上傳完整圖片
             logger.info(f"  模式: 完整模式（包含個資）")
+            from ocr_extractor import OCRExtractor
             extractor = OCRExtractor(api_key, model=args.model)
             ocr_results = extractor.batch_extract(
                 pdf_files,

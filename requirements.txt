@@ -1,4 +1,4 @@
-# OCR 評分表辨識系統 - 依賴套件
+# OCR 評分表辨識工具 - 依賴套件
 # Handwritten Grading OCR - Dependencies
 
 # Google Gemini API for OCR
