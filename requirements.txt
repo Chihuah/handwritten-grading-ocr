@@ -1,0 +1,11 @@
+# OCR 評分表辨識系統 - 依賴套件
+# Handwritten Grading OCR - Dependencies
+
+# Google Gemini API for OCR
+google-genai>=1.57.0
+
+# PDF processing
+PyMuPDF>=1.26.0
+
+# Image processing
+Pillow>=12.0.0

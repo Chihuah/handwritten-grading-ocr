@@ -1,0 +1,102 @@
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+__pycache__/
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OCR and Generated Files
+ocr_results.json
+masked_images/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# Student Reports and Data (sensitive)
+report1/
+report2/
+report*/
+
+# Output Files
+output/
+results/
+*.csv
+*.xlsx
+
+# Logs
+*.log
+logs/
+
+# API Keys and Credentials
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# OS specific
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+GITHUB_UPLOAD_CHECKLIST.md
