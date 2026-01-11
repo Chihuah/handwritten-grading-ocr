@@ -60,12 +60,17 @@ dmypy.json
 # OCR and Generated Files
 ocr_results.json
 masked_images/
-*.pdf
+
+# Images (exclude all except examples)
 *.png
 *.jpg
 *.jpeg
 *.gif
 *.bmp
+
+# PDFs (exclude all except examples)
+*.pdf
+!examples/*.pdf
 
 # Student Reports and Data (sensitive)
 report1/
