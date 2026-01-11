@@ -104,4 +104,9 @@ desktop.ini
 *.swp
 *~.nib
 
+# Analysis and debug files
+test_analysis.md
+debug_*.py
+test_*.py
+
 GITHUB_UPLOAD_CHECKLIST.md
